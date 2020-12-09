@@ -1,0 +1,17 @@
+---
+layout: default
+title: Pubblicazioni
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ligula magna, maximus sit amet ornare quis, auctor tristique justo. Etiam.
+
+---
+
+    {% include jumbotron.html %}
+
+    <br>
+
+    {% for item in site.data.pubblicazioni %}
+      {% include card_pubblicazioni.html %}
+  {% endfor %}
+
+  <br>
+  <br>

@@ -1,0 +1,13 @@
+<div class="container">
+  {% for item in site.data.progetti %}
+  <div class="card bg-dark text-white" id="{{ item.titolo }}" >
+    <img class="card-img" src="{{ item.immagine }}" alt="{{ item.titolo }}" style="height:300px; opacity: .3;">
+    <div class="card-img-overlay">
+      <h5 class="card-title" style="font weight: bold;">{{ item.titolo }}</h5>
+      <p class="card-text">{{ item.descrizione_carta }}</p>
+    </div>
+  </div>
+<br>
+<br>
+{% endfor %}
+</div>
